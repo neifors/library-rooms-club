@@ -1,0 +1,59 @@
+div#create-lobby-wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 50px;
+   padding: 10px;
+   border: 2px solid rgb(36, 91, 118);
+   border-radius: 20px;
+   width: 300px;
+   box-shadow: 0 4px 8px 0 rgba(62, 96, 150, 0.2), 0 6px 20px 0 rgba(42, 116, 181, 0.19);
+   text-align: center;
+}
+
+div.wrapper-of-wrapper {
+   display: flex;
+   justify-content: center;
+}
+
+input#room-name-input {
+   width:250px;
+}
+
+input#room-name-submit , input#chat-message-submit {
+   margin: 10px;
+   width: auto;
+
+   border-radius: 23px;
+   padding: 10px;
+   background-color: rgb(169, 209, 210);
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   word-spacing: 5%;
+  
+}
+
+h2#chat-title {
+   margin: 50px;
+}
+
+
+div#chat-instructions {
+   text-align: center;
+}
+
+div.chat-room-wrapper {
+   text-align: center;
+   margin: 50px;
+}
+
+textarea {
+   resize: none;
+   box-shadow: 0 4px 8px 0 rgba(62, 96, 150, 0.2), 0 6px 20px 0 rgba(42, 116, 181, 0.19);
+}
+
+img#happy-book-img {
+   margin: 30px;
+}

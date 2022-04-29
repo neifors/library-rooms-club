@@ -1,0 +1,27 @@
+{% extends "library/base.html" %}
+
+{% block content %}
+
+<h1>Welcome to the Library
+    {% if user.is_authenticated %}
+    , {{user}}!
+    {% else %}
+    !
+    {% endif %}
+</h1>
+
+<p>Here are all the books we have in the library:</p>
+
+<ul>
+    {% for book in books %}
+    <li>
+        <a href="{% url 'library-show' id=book.id %}">{{book.title}}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<div class="centerThis">
+<p> Would you like to donate a book to the library? Click here! </p>   
+<a href="{% url 'library-create' %}"> <button>Add new book</button></a>
+</div>
+{% endblock content %}

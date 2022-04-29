@@ -1,0 +1,15 @@
+{% extends "library/base.html" %}
+
+{% block content %}
+<h1> Thanks for donating a book! </h1>
+<h2> Please enter the information for your book below </h2>
+<div class="wrapper-of-wrapper">
+    <div class="form-wrapper">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Add book">
+    </form>
+</div>
+</div>
+{% endblock content %}

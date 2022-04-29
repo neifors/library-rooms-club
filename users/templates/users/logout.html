@@ -1,0 +1,16 @@
+{% extends "library/base.html" %}
+
+{% block content %}
+<div class="wrapper-of-wrapper">
+    <h1 id="bye-msg">Thank you for visiting our library! <br> Come again soon!</h1> <br>
+
+</div>
+<div class="wrapper-of-wrapper">
+    <img id="happy-book-img" src="https://th.bing.com/th/id/OIP.r54SBykzzCfJnrLUw-pj_gHaE_?pid=ImgDet&rs=1" alt="happy book">
+</div>
+
+<div class="wrapper-of-wrapper"><a href='{% url "library-home" %}'><button>Home</button></a></div>
+
+
+{% endblock content %}
+
